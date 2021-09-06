@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionViewSupport", "CollectionViewSupport.csproj", "{33A3B9F1-02F4-4964-8E6C-AF58BB1B6079}"
+# Visual Studio 16
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CollectionViewSupport", "CollectionViewSupport.Net5.csproj", "{33A3B9F1-02F4-4964-8E6C-AF58BB1B6079}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
