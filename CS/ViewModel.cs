@@ -44,10 +44,10 @@ namespace CollectionViewSupport {
         }
 
         private bool EvenMethod(object item) {
-            return ((TestData)item).Number1 % 2 == 0;
+            return ((TestData)item)?.Number1 % 2 == 0;
         }
         private bool OddMethod(object item) {
-            return ((TestData)item).Number1 % 2 == 1;
+            return ((TestData)item)?.Number1 % 2 == 1;
         }
     }
     public class FilterItem {
