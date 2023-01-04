@@ -3,7 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:dxg="http://schemas.devexpress.com/winfx/2008/xaml/grid"
         xmlns:local="clr-namespace:CollectionViewSupport"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="340" Width="650">
     <Window.DataContext>
         <local:ViewModel/>
     </Window.DataContext>
@@ -17,23 +17,23 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
 
-        <StackPanel Orientation="Horizontal" Grid.ColumnSpan="2">
-            <CheckBox Name="isSyncCheckBox" IsChecked="True" Content="Is Synchronized With Current Item" VerticalAlignment="Center"/>
+        <CheckBox Name="isSyncCheckBox" IsChecked="True" Content="Is Synchronized With Current Item" VerticalAlignment="Center" Margin="4"/>
 
+        <StackPanel Orientation="Horizontal" Grid.Column="1" HorizontalAlignment="Center" Margin="4">
             <Label Content="Filter condition: "/>
-            <ComboBox SelectedIndex="0" SelectedValue="{Binding Path=Data.Filter}" 
+            <ComboBox SelectedIndex="0"
+                      SelectedValue="{Binding Path=Data.Filter}" 
                       ItemsSource="{Binding Path=Filters}" 
                       DisplayMemberPath="Caption"
                       SelectedValuePath="Filter" 
                       IsEditable="False"/>
         </StackPanel>
 
-
-        <dxg:GridControl Name="gridControl" ItemsSource="{Binding Path=Data}" AutoGenerateColumns="AddNew" Grid.Row="1">
+        <dxg:GridControl ItemsSource="{Binding Path=Data}" AutoGenerateColumns="AddNew" Grid.Row="1">
             <dxg:GridControl.View>
                 <dxg:TableView IsSynchronizedWithCurrentItem="{Binding Path=IsChecked, ElementName=isSyncCheckBox}" 
-                                   AutoWidth="True" ShowGroupPanel="False" AllowGrouping="False"
-                                   AllowEditing="False" ShowAutoFilterRow="True" />
+                               AutoWidth="True" ShowGroupPanel="False" AllowGrouping="False"
+                               AllowEditing="False" ShowAutoFilterRow="True" />
             </dxg:GridControl.View>
         </dxg:GridControl>
 
