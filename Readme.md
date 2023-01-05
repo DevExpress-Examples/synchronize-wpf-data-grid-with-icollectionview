@@ -3,18 +3,26 @@
 [![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/E2209)
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
-<!-- default file list -->
-*Files to look at*:
 
-* **[MainWindow.xaml](./CS/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/MainWindow.xaml))**
-* [MainWindow.xaml.cs](./CS/MainWindow.xaml.cs) (VB: [MainWindow.xaml.vb](./VB/MainWindow.xaml.vb))
+# Synchronize the WPF Data Grid with the ICollectionView
+
+This example demonstrates how to bind the [GridControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl) to an [ICollectionView](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.icollectionview) and perform data shaping operations at the data source level.
+
+This project contains the [GridControl](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.GridControl) and [ListView](https://learn.microsoft.com/en-us/dotnet/api/system.windows.controls.listview) bound to the same [ICollectionView](https://learn.microsoft.com/en-us/dotnet/api/system.componentmodel.icollectionview) source:
+
+![image](https://user-images.githubusercontent.com/65009440/210560694-f844d1aa-09b7-4131-8991-6bdd7dcc6d5a.png)
+
+## Files to Review
+
+* [MainWindow.xaml](./CS/MainWindow.xaml) (VB: [MainWindow.xaml](./VB/MainWindow.xaml))
 * [ViewModel.cs](./CS/ViewModel.cs) (VB: [ViewModel.vb](./VB/ViewModel.vb))
-<!-- default file list end -->
-# How to synchronize the DXGrid with the ICollectionView (CollectionViewSource)
 
+## Documentation
 
-<p>The following example illustrates how to synchronize the DXGrid with the ICollectionView.</p>
+* [Bind the WPF Data Grid to ICollectionView](https://docs.devexpress.com/WPF/11124/controls-and-libraries/data-grid/bind-to-data/bind-to-icollectionview)
+* [DataViewBase.IsSynchronizedWithCurrentItem](https://docs.devexpress.com/WPF/DevExpress.Xpf.Grid.DataViewBase.IsSynchronizedWithCurrentItem)
+* [WPF Data Grid: Bind to Data](https://docs.devexpress.com/WPF/7352/controls-and-libraries/data-grid/bind-to-data)
 
-<br/>
+## More Examples
 
-
+* [Bind the WPF Data Grid to Data](https://github.com/DevExpress-Examples/how-to-bind-wpf-grid-to-data)
